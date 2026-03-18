@@ -1,4 +1,4 @@
-# Aventure
+# Aventure Extreme by mket
 
 ```sh
 npm create astro@latest -- --template basics
