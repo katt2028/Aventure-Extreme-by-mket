@@ -1,5 +1,6 @@
 # Aventure Extreme by mket
 
+Este es un proyecto familiar divertido y apto para todas las edades
 ```sh
 npm create astro@latest -- --template basics
 ```
