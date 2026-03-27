@@ -1,3 +1,9 @@
+---
+import { Icon } from "astro-icon/components";
+import "../styles/global.css";
+
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -10,7 +16,7 @@
 	</head>
 	<body>
 		<header>
-			<p>Aventure Extreme</p>
+			<p><Icon name="noto--mountain" size={30} /> Aventure Extreme</p>
 			<div>
 				<a href="/">Routes</a>
 				<a href="/nuestra-flota">Our-fleet</a>
@@ -21,7 +27,6 @@
 			<div>
 				<button>Botton now</button>
 			</div>
-			
 		</header>
 	</body>
 	<slot />
