@@ -1,7 +1,5 @@
 ---
 import { Icon } from "astro-icon/components";
-import "../styles/global.css";
-
 ---
 
 <!doctype html>
@@ -15,22 +13,20 @@ import "../styles/global.css";
 		<title>Aventure Extreme</title>
 	</head>
 	<body>
-		<header>
-			<p><Icon name="noto--mountain" size={30} /> Aventure Extreme</p>
-			<div>
-				<a href="/">Routes</a>
-				<a href="/nuestra-flota">Our-fleet</a>
-				<a href="/reserva-contacto">Booking</a>
-				<a href="/valencia-quads">Safety</a>
-			</div>
 
-			<div>
-				<button>Botton now</button>
-			</div>
-		</header>
+		<li><a href="/">Home</a></li>
+		<li><a href="/flota">flota</a></li>
+		<li><a href="/reserva">reserva</a></li>
+		<li><a href="/rutas">rutas</a></li>
+		
 	</body>
-	<slot />
+
+	<div>
+		<button>Botton now</button>
+	</div>
 </html>
+
+<slot />
 
 <style>
 	html,
