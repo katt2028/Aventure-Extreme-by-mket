@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import '../styles/global.css'
 ---
 
 <!doctype html>
@@ -10,29 +11,26 @@ import { Icon } from "astro-icon/components";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Aventure Extreme</title>
+		<title>Aventure Extremem</title>
 	</head>
 
 	<body>
-		<li><a href="/">Home</a></li>
-		<li><a href="/rutasytours">Rutas y Tours</a></li>
-		<li><a href="/nuestraflota">Nuestra Flota</a></li>
-		<li><a href="/reservaycontacto">Reserva y Contacto</a></li>
-		
+		<header class="flex">
+
+			<p  class="text-3xl font-bold">Aventure Extreme</p>
+			<div class="flex">
+				<li><a href="/" class="">Home</a></li>
+				<li><a href="/rutasytours">Rutas y Tours</a></li>
+				<li><a href="/nuestraflota">Nuestra Flota</a></li>
+				<li><a href="/reservaycontacto">Reserva y Contacto</a></li>
+			</div>
+			<div>
+				<button class="text-lg font-bold">Botton now</button>
+			</div>
+		</header>
+
+		<slot></slot>
 	</body>
 
-	<div>
-		<button>Botton now</button>
-	</div>
 </html>
 
-<slot />
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
