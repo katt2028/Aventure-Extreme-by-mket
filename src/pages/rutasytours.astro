@@ -5,23 +5,52 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
     <section>
         <div>
-            <p>Choose Your Path</p>
-            <p>Unleash the power in Valencia</p>
-            <p>
-                Turn heads from Prebo to Guaparo. More speed, less stress, and
-                all the flow you need to conquer the city
+            <button
+                class="text-lg font-serif text-ambar-950 bg-amber-500
+           px-3 py-1 rounded-full"
+                >Elige tu camino</button
+            >
+
+            <p class="text-6xl font-bold text-amber-950">DESATA EL</p>
+            <p class="text-5xl font-serif text-amber-600">PODER</p>
+            <p class="text-6xl font-bold text-amber-950">EN VALENCIA</p>
+
+            <p class="text-xl font-serif">
+                Captura todas las miradas desde Prebo hasta Guaparo. Más
+                velocidad, menos estrés y toda la fluidez que necesitas para
+                conquistar la ciudad.
             </p>
         </div>
+
         <div>
             <img src="/primerafoto.png" alt="" />
         </div>
     </section>
 
     <section class="flex text-xl">
-        <button> All Tours</button>
-        <button> Mountain Adventure </button>
-        <button> Sunset Expeditions</button>
-        <button> Family Friendly </button>
+        <button
+            class="text-s font-serif text-black bg-amber-100
+                 px-4 py-2 rounded-full"
+            >Todos los tours</button
+        >
+
+        <button
+            class="text-s font-serif text-black bg-amber-100
+                 px-4 py-2 rounded-full"
+            >Aventura de montaña</button
+        >
+
+        <button
+            class="text-s font-serif text-black bg-amber-100
+                 px-4 py-2 rounded-full"
+            >Expediciones al atardecer</button
+        >
+
+        <button
+            class="text-s font-serif text-black bg-amber-100
+                 px-4 py-2 rounded-full"
+            >Ideal para compatir en familia</button
+        >
     </section>
 
     <section>
@@ -29,8 +58,8 @@ import Layout from "../layouts/Layout.astro";
         <div>
             <div>
                 <div>
-                    <p>Expert</p>
-                    <p>Toprated</p>
+                    <p>Experto</p>
+                    <p>Mejor valorado</p>
                 </div>
                 <img src="/fondoa" alt="" />
             </div>
@@ -38,17 +67,20 @@ import Layout from "../layouts/Layout.astro";
             <div>
                 <p>Cerro El Cafe</p>
                 <div>
-                    <p>4 Hours</p>
-                    <p>Technical</p>
+                    <p>1 Hora</p>
+                    <p>Tecnica</p>
                 </div>
             </div>
-
             <div>
                 <div>
-                    <p>Starting From</p>
-                    <p>$149.3</p>
+                    <p>A partir de</p>
+                    <p>$34</p>
                 </div>
-                <button> Iconoflecha</button>
+                <button
+                    class="text-l font-bold text-white bg-mauve-400
+                 px-4 py-2 rounded-full"
+                    >Icono flecha</button
+                >
             </div>
         </div>
 
@@ -56,7 +88,7 @@ import Layout from "../layouts/Layout.astro";
         <div>
             <div>
                 <div>
-                    <p>Begginer</p>
+                    <p>Principiante</p>
                 </div>
                 <img src="/fondob" alt="" />
             </div>
@@ -64,17 +96,21 @@ import Layout from "../layouts/Layout.astro";
             <div>
                 <p>Playa Waikiki</p>
                 <div>
-                    <p>2.5 Hours</p>
-                    <p>Scenic</p>
+                    <p>40 Minutos</p>
+                    <p>Escenico</p>
                 </div>
             </div>
 
             <div>
                 <div>
-                    <p>Starting From</p>
-                    <p>48.6</p>
+                    <p>A partir de</p>
+                    <p>$35</p>
                 </div>
-                <button> Iconoflecha</button>
+                <button
+                    class="text-l font-bold text-white bg-mauve-400
+                 px-4 py-2 rounded-full"
+                    >Icono flecha</button
+                >
             </div>
         </div>
 
@@ -82,7 +118,7 @@ import Layout from "../layouts/Layout.astro";
         <div>
             <div>
                 <div>
-                    <p>Intermediate</p>
+                    <p>Intermedio</p>
                 </div>
                 <img src="/fondoc" alt="" />
             </div>
@@ -90,87 +126,111 @@ import Layout from "../layouts/Layout.astro";
             <div>
                 <p>Centro Sambil Valencia</p>
                 <div>
-                    <p>3 Hours</p>
-                    <p>City</p>
+                    <p>45 minutos</p>
+                    <p>Ciudad</p>
+                </div>
+
+                <div>
+                    <div>
+                        <p>A partir de</p>
+                        <p>$36</p>
+                    </div>
+
+                    <button
+                        class="text-lg font-bold text-white bg-mauve-400
+                 px-4 py-2 rounded-full"
+                        >Icono flecha</button
+                    >
                 </div>
             </div>
 
+            <!-- esta es la cuarta tarjeta -->
             <div>
                 <div>
-                    <p>Starting From</p>
-                    <p>37.6</p>
-                </div>
-                <button> Iconoflecha</button>
-            </div>
-        </div>
-
-        <!-- esta es la cuarta tarjeta -->
-        <div>
-            <div>
-                <div>
-                    <p>All levels</p>
-                </div>
-                <img src="/fondod" alt="" />
-            </div>
-
-            <div>
-                <p>Unlock</p>
-                <div>
-                    <p>12 Hours</p>
-                    <p>Sunset</p>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <p>Starting From</p>
-                    <p>248</p>
-                </div>
-                <button> Iconoflecha</button>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div>
-            <img src="fondoe" alt="" />
-        </div>
-
-        <div>
-            <!-- Aqui es donde va el resto del contenido -->
-            <p>Seasonal Special</p>
-
-            <p>The Midnight Moon Run</p>
-            <p>
-                Experience the Valencian wild under the stars. This exclusive
-                night tour uses high-powered LED arrays to illuminate the trail
-                in a way you´ve never seen before. A truly cinematic adventure.
-            </p>
-
-            <div>
-                <div>
-                    <p>Departure Time</p>
-                    <p>9am - 12pm</p>
+                    <div>
+                        <p>All levels</p>
+                    </div>
+                    <img src="/fondod" alt="" />
                 </div>
 
                 <div>
-                    <p>Adventure Pace</p>
-                    <p>Steady Flow</p>
+                    <p>Descubrir</p>
+                    <div>
+                        <p>12 Houras</p>
+                        <p>Eventos</p>
+                    </div>
                 </div>
 
-                <button>Book Night Tours Experience -$35</button>
+                <div>
+                    <div>
+                        <p>A partir de</p>
+                        <p>$118.3</p>
+                    </div>
+
+                    <button
+                        class="text-lg font-bold text-white bg-mauve-400
+                 px-4 py-2 rounded-full"
+                        >Icono flecha</button
+                    >
+                </div>
             </div>
         </div>
 
-        <section class="flex text-amber-100">
+        <section>
             <div>
-                <p>Explore the circuit</p>
-                <p>
-                    Our routes cover over 90-120km of diverse terrain. From
-                    technical steep climbs to fast open paths, there is a trail
-                    every rider.
+                <img src="fondoe" alt="" />
+            </div>
+
+            <div>
+                <!-- Aqui es donde va el resto del contenido -->
+                <p
+                    class="text-lg font-serif text-white bg-amber-600 px-6 py-3
+					rounded-full"
+                >
+                    Seasonal Special
                 </p>
+
+                <div>
+                    <p class="text-6xl font-bold text-amber-950">LA CARRERA</p>
+                    <p class="text-6xl font-bold text-amber-600">
+                        DE LA MEDIANOCHE
+                    </p>
+                </div>
+                <p>
+                    Experience the Valencian wild under the stars. This
+                    exclusive night tour uses high-powered LED arrays to
+                    illuminate the trail in a way you´ve never seen before. A
+                    truly cinematic adventure.
+                </p>
+
+                <div>
+                    <div>
+                        <p>Departure Time</p>
+                        <p>9am - 12pm</p>
+                    </div>
+
+                    <div>
+                        <p>Adventure Pace</p>
+                        <p>Steady Flow</p>
+                    </div>
+
+                    <button
+                        class="text-lg font-serif text-white
+                    bg-amber-900 rounded-full px-3 py-2"
+                        >Reserva tu experiencia de visita nocturna - $35
+                    </button>
+                </div>
             </div>
+
+            <section class="flex text 2x1">
+                <div>
+                    <p>Explore the circuit</p>
+                    <p>
+                        Our routes cover over 90-120km of diverse terrain. From
+                        technical steep climbs to fast open paths, there is a
+                        trail every rider.
+                    </p>
+                </div>
 
                 <div>
                     falta icon brujula
@@ -185,6 +245,7 @@ import Layout from "../layouts/Layout.astro";
                 </div>
 
                 <button>FULL MAP ACCESS</button>
+            </section>
         </section>
-    </section></Layout
->
+    </section>
+</Layout>
