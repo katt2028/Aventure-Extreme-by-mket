@@ -7,13 +7,10 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    <section>
-        <p class="text-6xl font-bold text-amber-950">TOMA EL</p>
-        <p class="text-6xl font-bold text-amber-600">camino de polvo</p>
-        <p class="text-6xl font-bold text-amber-950">MENOS</p>
-        <p class="text-6xl font-bold text-amber-950">TRANSITADO</p>
+    <section class="flex gap-3 items-end">
 
-        <div>
+        <div class=" flex-3">
+            <p class="text-9xl font-bold text-amber-950 uppercase">TOMA EL <span class="font-bold text-amber-600">camino de polvo</span> MENOS TRANSITADO</p>
             <div>
                 <p class="text-xl font-serif text-amber-950">
                     Cambia el tráfico por el cerro. 🏔️ Sube a lo más alto para
@@ -22,43 +19,43 @@ import Layout from "../layouts/Layout.astro";
                 </p>
 
                 <p class="text-4xl font-extrabold text-amber-950">
-                    ¿Estás listo para ensuciarte un poco o te vas a quedar mirando?
+                    ¿Estás listo para ensuciarte un poco o te vas a quedar
+                    mirando?
                 </p>
-
-                <div>
-                    <button
-                        class="text-lg font-bold text-white bg-amber-600
-                      px-5 py-2 rounded-full"
-                        >Reserva tu viaje</button
-                    >
-
-                    <button
-                        class="text-lg font-bold text-amber-900 bg-amber-100
-                 px-5 py-2 rounded-full"
-                        >Ver recorridos</button
-                    >
-                </div>
             </div>
-
             <div>
-                <div class=" text-3xl">
-                    <Icon name="montaingrey"/>
-                    <div>
-                        <p class="text-xl font-serif">Altitud máxima</p>
-                        <p class="text-4xl font-serif">1,012 Metros</p>
-                    </div>
-                </div>
-                <p class="text-xl font-serif ">
-                    Recorre las cumbres más altas de la costa valenciana con
-                    nuestros guías expertos y equipo de la mejor categoría.
-                </p>
+                <button
+                    class="text-lg font-bold text-white bg-amber-600
+                      px-5 py-2 rounded-full"
+                    >Reserva tu viaje</button
+                >
+
+                <button
+                    class="text-lg font-bold text-amber-900 bg-amber-100
+                 px-5 py-2 rounded-full"
+                    >Ver recorridos</button
+                >
             </div>
+
         </div>
+
+        <div class="flex-2 bg-amber-100">
+            <div class="text-3xl flex items-center">
+                <div class="p-6 bg-amber-700 rounded-full">
+                    <Icon name="montaingrey" />
+
+                </div>
+                <div>
+                    <p class="text-xl font-serif">Altitud máxima</p>
+                    <p class="text-4xl font-serif">1,012 Metros</p>
+                </div>
+            </div>
+            <p class="text-xl font-serif">
+                Recorre las cumbres más altas de la costa valenciana con
+                nuestros guías expertos y equipo de la mejor categoría.
+            </p>
+        </div>
+
     </section>
 </Layout>
-
-
-
-
-
 

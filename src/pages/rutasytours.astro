@@ -1,4 +1,5 @@
 ---
+import Tarjeta1 from "../components/Tarjeta1.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -11,9 +12,9 @@ import Layout from "../layouts/Layout.astro";
                 >Elige tu camino</button
             >
 
-            <p class="text-6xl font-bold text-amber-950">DESATA EL</p>
-            <p class="text-5xl font-serif text-amber-600">PODER</p>
-            <p class="text-6xl font-bold text-amber-950">EN VALENCIA</p>
+            <p class="text-8xl font-bold text-amber-950">DESATA EL</p>
+            <p class="text-7xl font-serif text-amber-600">PODER</p>
+            <p class="text-8xl font-bold text-amber-950">EN VALENCIA</p>
 
             <p class="text-xl font-serif">
                 Captura todas las miradas desde Prebo hasta Guaparo. Más
@@ -53,39 +54,26 @@ import Layout from "../layouts/Layout.astro";
         >
     </section>
 
-    <section>
-        <!-- esta es la primera tarjeta -->
-        <div>
-            <div>
-                <div>
-                    <p>Experto</p>
-                    <p>Mejor valorado</p>
-                </div>
-                <img src="/fondoa" alt="" />
+    <section class="flex gap-6 flex-wrap">
+        <!-- <div class="flex-1">
+            <div><img src="fondoa" alt="" /></div>
+            <div
+                class="text-xxl text-balck font-black py-2
+            font-serif"
+            >
+                Cerro El Café
             </div>
+            <div>4 horas Tecnicas</div>
+            <div class="text-xl">$34</div>
+        </div> -->
 
-            <div>
-                <p>Cerro El Cafe</p>
-                <div>
-                    <p>1 Hora</p>
-                    <p>Tecnica</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <p>A partir de</p>
-                    <p>$34</p>
-                </div>
-                <button
-                    class="text-l font-bold text-white bg-mauve-400
-                 px-4 py-2 rounded-full"
-                    >Icono flecha</button
-                >
-            </div>
-        </div>
+        <Tarjeta1 titulo="Cerro El Cafe" subtitle="1.45 Horas Tecnical" price="38" img="/fondoa.png" />
+        <Tarjeta1 titulo="Playa Waikiki" subtitle="1.20 Horas Escenica" price="40" img="/fondob.jpg"/>
+        <Tarjeta1 titulo="Centro Comercial Sambil" subtitle="45 Minutos " price="42" img="/fondoc.png" />
+        <Tarjeta1 titulo="Descubrir Valencia" subtitle="25 Minutos" price="45" img="/fondod.png"/>
 
         <!-- esta es la segunda tarjeta -->
-        <div>
+        <!-- <div>
             <div>
                 <div>
                     <p>Principiante</p>
@@ -112,10 +100,10 @@ import Layout from "../layouts/Layout.astro";
                     >Icono flecha</button
                 >
             </div>
-        </div>
+        </div> -->
 
         <!-- esta es la tercera tarjeta -->
-        <div>
+        <!-- <div>
             <div>
                 <div>
                     <p>Intermedio</p>
@@ -143,109 +131,104 @@ import Layout from "../layouts/Layout.astro";
                     >
                 </div>
             </div>
-
-            <!-- esta es la cuarta tarjeta -->
+        </div> -->
+        <!-- esta es la cuarta tarjeta -->
+        <!-- <div>
             <div>
                 <div>
-                    <div>
-                        <p>All levels</p>
-                    </div>
-                    <img src="/fondod" alt="" />
+                    <p>All levels</p>
+                </div>
+                <img src="/fondod" alt="" />
+            </div>
+
+            <div>
+                <p>Descubrir</p>
+                <div>
+                    <p>12 Houras</p>
+                    <p>Eventos</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <p>A partir de</p>
+                    <p>$118.3</p>
                 </div>
 
-                <div>
-                    <p>Descubrir</p>
-                    <div>
-                        <p>12 Houras</p>
-                        <p>Eventos</p>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <p>A partir de</p>
-                        <p>$118.3</p>
-                    </div>
-
-                    <button
-                        class="text-lg font-bold text-white bg-mauve-400
+                <button
+                    class="text-lg font-bold text-white bg-mauve-400
                  px-4 py-2 rounded-full"
-                        >Icono flecha</button
-                    >
-                </div>
-            </div>
-        </div>
-
-        <section>
-            <div>
-                <img src="fondoe" alt="" />
-            </div>
-
-            <div>
-                <!-- Aqui es donde va el resto del contenido -->
-                <p
-                    class="text-lg font-serif text-white bg-amber-600 px-6 py-3
-					rounded-full"
+                    >Icono flecha</button
                 >
-                    Seasonal Special
-                </p>
-
-                <div>
-                    <p class="text-6xl font-bold text-amber-950">LA CARRERA</p>
-                    <p class="text-6xl font-bold text-amber-600">
-                        DE LA MEDIANOCHE
-                    </p>
-                </div>
-                <p>
-                    Experience the Valencian wild under the stars. This
-                    exclusive night tour uses high-powered LED arrays to
-                    illuminate the trail in a way you´ve never seen before. A
-                    truly cinematic adventure.
-                </p>
-
-                <div>
-                    <div>
-                        <p>Departure Time</p>
-                        <p>9am - 12pm</p>
-                    </div>
-
-                    <div>
-                        <p>Adventure Pace</p>
-                        <p>Steady Flow</p>
-                    </div>
-
-                    <button
-                        class="text-lg font-serif text-white
-                    bg-amber-900 rounded-full px-3 py-2"
-                        >Reserva tu experiencia de visita nocturna - $35
-                    </button>
-                </div>
             </div>
-
-            <section class="flex text 2x1">
-                <div>
-                    <p>Explore the circuit</p>
-                    <p>
-                        Our routes cover over 90-120km of diverse terrain. From
-                        technical steep climbs to fast open paths, there is a
-                        trail every rider.
-                    </p>
-                </div>
-
-                <div>
-                    falta icon brujula
-                    <button>LIVE GPS TRACKING</button>
-                    <p>Always guided by real-time telemetry</p>
-                </div>
-
-                <div>
-                    falta icon escudo
-                    <button>PREMIUM PROTECTION</button>
-                    <p>Always guided by real-time telemetry</p>
-                </div>
-
-                <button>FULL MAP ACCESS</button>
-            </section>
-        </section>
+        </div> -->
     </section>
 </Layout>
+<section>
+    <div>
+        <img src="fondoe" alt="" />
+    </div>
+
+    <div>
+        <!-- Aqui es donde va el resto del contenido -->
+        <p
+            class="text-lg font-serif text-white bg-amber-600 px-6 py-3
+					rounded-full"
+        >
+            Seasonal Special
+        </p>
+
+        <div>
+            <p class="text-6xl font-bold text-amber-950">LA CARRERA</p>
+            <p class="text-6xl font-bold text-amber-600">DE LA MEDIANOCHE</p>
+        </div>
+        <p>
+            Experience the Valencian wild under the stars. This exclusive night
+            tour uses high-powered LED arrays to illuminate the trail in a way
+            you´ve never seen before. A truly cinematic adventure.
+        </p>
+
+        <div>
+            <div>
+                <p>Departure Time</p>
+                <p>9am - 12pm</p>
+            </div>
+
+            <div>
+                <p>Adventure Pace</p>
+                <p>Steady Flow</p>
+            </div>
+
+            <button
+                class="text-lg font-serif text-white
+                    bg-amber-900 rounded-full px-3 py-2"
+                >Reserva tu experiencia de visita nocturna - $35
+            </button>
+        </div>
+    </div>
+
+    <section class="flex text 2x1">
+        <div>
+            <p>Explore the circuit</p>
+            <p>
+                Our routes cover over 90-120km of diverse terrain. From
+                technical steep climbs to fast open paths, there is a trail
+                every rider.
+            </p>
+        </div>
+
+        <div>
+            falta icon brujula
+            <button>LIVE GPS TRACKING</button>
+            <p>Always guided by real-time telemetry</p>
+        </div>
+
+        <div>
+            falta icon escudo
+            <button>PREMIUM PROTECTION</button>
+            <p>Always guided by real-time telemetry</p>
+        </div>
+
+        <button>FULL MAP ACCESS</button>
+    </section>
+</section>
