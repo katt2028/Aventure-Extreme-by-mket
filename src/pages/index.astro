@@ -7,55 +7,63 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    <section class="flex gap-3 items-end">
-
-        <div class=" flex-3">
-            <p class="text-9xl font-bold text-amber-950 uppercase">TOMA EL <span class="font-bold text-amber-600">camino de polvo</span> MENOS TRANSITADO</p>
+    <section class="relative overflow-hidden flex gap-3 items-end pt-72 bg-gradient-to-r from-amber-50 to-transparent px-12 py-8">
+        <div class="absolute -top-3/5 left-0 -z-10 w-full">
+            <img
+               class="w-full h-full"
+                src='/motodefondo.png'
+                alt=""
+            />
+        </div>
+        <div class="flex-3">
+            <p class="text-9xl font-bold text-amber-950 uppercase">
+                TOMA EL <span class="font-bold text-amber-600"
+                    >camino de polvo</span
+                > MENOS TRANSITADO
+            </p>
             <div>
-                <p class="text-xl font-serif text-amber-950">
+                <p class="text-3xl text-amber-950 px-3 ml-6 py-3">
                     Cambia el tráfico por el cerro. 🏔️ Sube a lo más alto para
                     ver el mejor sunset de la ciudad y aprende trucos nuevos con
                     nuestros expertos.
                 </p>
 
-                <p class="text-4xl font-extrabold text-amber-950">
+                <p
+                    class="text-3xl font-extrabold text-amber-950 px-3 ml-6 py-5"
+                >
                     ¿Estás listo para ensuciarte un poco o te vas a quedar
                     mirando?
                 </p>
             </div>
             <div>
                 <button
-                    class="text-lg font-bold text-white bg-amber-600
-                      px-5 py-2 rounded-full"
-                    >Reserva tu viaje</button
+                    class="text-2xl font-bold text-white bg-amber-600
+                      px-5 ml-6 py-5 rounded-full"
+                    >RESERVA TU VIAJE</button
                 >
 
                 <button
-                    class="text-lg font-bold text-amber-900 bg-amber-100
-                 px-5 py-2 rounded-full"
-                    >Ver recorridos</button
+                    class="text-2xl font-bold text-amber-900 bg-amber-100
+                 px-6 ml-9 py-6 rounded-full"
+                    >VER RECORRIDOS</button
                 >
             </div>
-
         </div>
 
-        <div class="flex-2 bg-amber-100">
+        <div class="flex-2 bg-amber-100 px-5 py-5 rounded-lg max-w-lg">
             <div class="text-3xl flex items-center">
-                <div class="p-6 bg-amber-700 rounded-full">
+                <div class="p-4 bg-amber-700 rounded-full">
                     <Icon name="montaingrey" />
-
                 </div>
                 <div>
-                    <p class="text-xl font-serif">Altitud máxima</p>
-                    <p class="text-4xl font-serif">1,012 Metros</p>
+                    <p class="text-xl  ">Altitud máxima</p>
+                    <p class="text-4xl  ">1,012 Metros</p>
                 </div>
             </div>
-            <p class="text-xl font-serif">
+            <p class="text-xl  ">
                 Recorre las cumbres más altas de la costa valenciana con
                 nuestros guías expertos y equipo de la mejor categoría.
             </p>
         </div>
-
     </section>
 </Layout>
-

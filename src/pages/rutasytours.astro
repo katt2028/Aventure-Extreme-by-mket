@@ -1,22 +1,53 @@
 ---
 import Tarjeta1 from "../components/Tarjeta1.astro";
 import Layout from "../layouts/Layout.astro";
+
+const Destinos = [
+    {
+        titulo: "Cerro El Cafe",
+        subtitle: "1 Hora Tecnical",
+        price: "60",
+        img: "/fondoa.png",
+        nivel: "Experto"
+    },
+    {
+        titulo: "Playa Waikiki",
+        subtitle: "1 Hora Escenica",
+        price: "43",
+        img: "/fondob.jpg",
+        nivel: "Principiante"
+    },
+    {
+        titulo: "Centro Comercial Sambil",
+        subtitle: "25 Minutos ",
+        price: "39",
+        img: "/fondoc.png",
+        nivel: "Intermedio"
+    },
+    {
+        titulo: "Descubrir Valencia",
+        subtitle: "12 Horas Eventos",
+        price: "118.3",
+        img: "/fondod.png",
+        nivel: "Todos los niveles"
+    },
+];
 ---
 
 <Layout>
-    <section>
+    <section class="py-11 px-11 flex gap-6 items-center">
         <div>
             <button
-                class="text-lg font-serif text-ambar-950 bg-amber-500
-           px-3 py-1 rounded-full"
-                >Elige tu camino</button
+                class="text-lg   text-ambar-950 bg-amber-500
+           px-4 py-2 rounded-full"
+                >ELIGE TU CAMINO</button
             >
 
             <p class="text-8xl font-bold text-amber-950">DESATA EL</p>
-            <p class="text-7xl font-serif text-amber-600">PODER</p>
+            <p class="text-7xl   text-amber-600">PODER</p>
             <p class="text-8xl font-bold text-amber-950">EN VALENCIA</p>
 
-            <p class="text-xl font-serif">
+            <p class="text-2xl   px- py-8">
                 Captura todas las miradas desde Prebo hasta Guaparo. Más
                 velocidad, menos estrés y toda la fluidez que necesitas para
                 conquistar la ciudad.
@@ -30,47 +61,42 @@ import Layout from "../layouts/Layout.astro";
 
     <section class="flex text-xl">
         <button
-            class="text-s font-serif text-black bg-amber-100
-                 px-4 py-2 rounded-full"
+            class="text-s   text-black bg-amber-100
+                 px-4 ml-4 py-2 rounded-full"
             >Todos los tours</button
         >
 
         <button
-            class="text-s font-serif text-black bg-amber-100
-                 px-4 py-2 rounded-full"
+            class="text-s   text-black bg-amber-100
+                 px-4 ml-4 py-2 rounded-full"
             >Aventura de montaña</button
         >
 
         <button
-            class="text-s font-serif text-black bg-amber-100
-                 px-4 py-2 rounded-full"
+            class="text-s   text-black bg-amber-100
+                 px-4 ml-4 py-2 rounded-full"
             >Expediciones al atardecer</button
         >
 
         <button
-            class="text-s font-serif text-black bg-amber-100
-                 px-4 py-2 rounded-full"
+            class="text-s   text-black bg-amber-100 items-between
+                 px-4 ml-4 py-2 rounded-full"
             >Ideal para compatir en familia</button
         >
     </section>
 
-    <section class="flex gap-6 flex-wrap">
-        <!-- <div class="flex-1">
-            <div><img src="fondoa" alt="" /></div>
-            <div
-                class="text-xxl text-balck font-black py-2
-            font-serif"
-            >
-                Cerro El Café
-            </div>
-            <div>4 horas Tecnicas</div>
-            <div class="text-xl">$34</div>
-        </div> -->
-
-        <Tarjeta1 titulo="Cerro El Cafe" subtitle="1.45 Horas Tecnical" price="38" img="/fondoa.png" />
-        <Tarjeta1 titulo="Playa Waikiki" subtitle="1.20 Horas Escenica" price="40" img="/fondob.jpg"/>
-        <Tarjeta1 titulo="Centro Comercial Sambil" subtitle="45 Minutos " price="42" img="/fondoc.png" />
-        <Tarjeta1 titulo="Descubrir Valencia" subtitle="25 Minutos" price="45" img="/fondod.png"/>
+    <section class="flex px-7 gap-6 flex-wrap">
+        {
+            Destinos.map((destino) => (
+                <Tarjeta1
+                    titulo={destino.titulo}
+                    subtitle={destino.subtitle}
+                    price={destino.price}
+                    img={destino.img}
+                    nivel={destino.nivel}
+                />
+            ))
+        }
 
         <!-- esta es la segunda tarjeta -->
         <!-- <div>
@@ -164,71 +190,72 @@ import Layout from "../layouts/Layout.astro";
         </div> -->
     </section>
 </Layout>
-<section>
-    <div>
-        <img src="fondoe" alt="" />
+
+<section class="flex items-center bg-amber-100">
+    <div class="py-11 px-11 flex gap-6 items-center flex-1">
+        <img src="/fondoe.jpg" alt="" />
     </div>
-
-    <div>
-        <!-- Aqui es donde va el resto del contenido -->
-        <p
-            class="text-lg font-serif text-white bg-amber-600 px-6 py-3
-					rounded-full"
+    <div class="flex-1">
+        <button
+            class="flex px-5 text-lg   text-white
+                    bg-amber-900 rounded-full px-3 ml-4 py-2"
         >
-            Seasonal Special
-        </p>
-
-        <div>
+            ESPECIAL DE TEMPORADA
+        </button>
+        <div class="px-4 ml-3 py-3">
             <p class="text-6xl font-bold text-amber-950">LA CARRERA</p>
             <p class="text-6xl font-bold text-amber-600">DE LA MEDIANOCHE</p>
         </div>
-        <p>
+        <p class="text-2xl   px-5 ml-3 py-3">
             Experience the Valencian wild under the stars. This exclusive night
             tour uses high-powered LED arrays to illuminate the trail in a way
             you´ve never seen before. A truly cinematic adventure.
         </p>
-
-        <div>
-            <div>
-                <p>Departure Time</p>
-                <p>9am - 12pm</p>
-            </div>
-
-            <div>
-                <p>Adventure Pace</p>
-                <p>Steady Flow</p>
+        <!-- comentario falta encerrarlas en una cajita como la macima altitud -->
+        <div class="space-y-10">
+            <div class=" flex">
+                <div class="flex-1 text-xl   px-5 ml-3 py-5 rounded-2xl bg-amber-50 ">
+                    <p class="uppercase font-semibold">Horarios</p>
+                    <p class=" text-4xl text-amber-950">7am - 11pm</p>
+                </div>
+    
+                <div class="flex-1 text-xl   px-5 ml-3 py-5 rounded-2xl bg-amber-50 ">
+                    <p class="uppercase font-semibold">Ritmo de aventura</p>
+                    <p class=" text-4xl text-amber-950 ">Siempre Disponible</p>
+                </div>
+                
             </div>
 
             <button
-                class="text-lg font-serif text-white
-                    bg-amber-900 rounded-full px-3 py-2"
-                >Reserva tu experiencia de visita nocturna - $35
+                class="text-3xl   text-white
+                    bg-amber-900 rounded-full px-14 ml-5 py-4"
+                >Reserva tu experiencia de visita nocturna por tan solo $34.99
             </button>
         </div>
     </div>
+    <!-- comentario esto falta por detallar, luego por supuesto las otras dos pages -->
+</section>
+<section class="flex-2 text-xl   px-3 ml-3 py-3">
+    <div>
+        <p class="text-6xl font-bold text-amber-950">Explora los circuitos</p>
+        <p>
+            Nuestras rutas cubren más de 90-120 km de terreno diverso. Desde
+            ascensos técnicos y empinados hasta senderos abiertos y rápidos, hay
+            un sendero para cada ciclista.
+        </p>
+    </div>
 
-    <section class="flex text 2x1">
-        <div>
-            <p>Explore the circuit</p>
-            <p>
-                Our routes cover over 90-120km of diverse terrain. From
-                technical steep climbs to fast open paths, there is a trail
-                every rider.
-            </p>
-        </div>
+    <div>
+        falta icon brujula
+        <button>SEGUIMIENTO GPS EN TIEMPO REAL</button>
+        <p>Siempre guiado por telemetría en tiempo real.</p>
+    </div>
 
-        <div>
-            falta icon brujula
-            <button>LIVE GPS TRACKING</button>
-            <p>Always guided by real-time telemetry</p>
-        </div>
+    <div>
+        falta icon escudo
+        <button>PROTECCIÓN PREMIUM</button>
+        <p>Siempre guiado por telemetría en tiempo real.</p>
+    </div>
 
-        <div>
-            falta icon escudo
-            <button>PREMIUM PROTECTION</button>
-            <p>Always guided by real-time telemetry</p>
-        </div>
-
-        <button>FULL MAP ACCESS</button>
-    </section>
+    <button>ACCESO AL MAPA COMPLETO EN TIEMPO REAL</button>
 </section>

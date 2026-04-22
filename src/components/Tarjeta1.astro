@@ -3,25 +3,26 @@ const titulo = Astro.props.titulo;
 const subtitle = Astro.props.subtitle;
 const price = Astro.props.price;
 const img = Astro.props.img;
+const nivel = Astro.props.nivel;
 ---
 
-<div class=" flex-1 ">
+<div class="flex-1">
     <div class="w-full h-80 overflow-hidden">
-        <div>
-            <p class="text-xl font-serif">Experto</p>
-            <p class="text-">Mejor valorado</p>
+        <div >
+            <p class="text-xl font-serif px-3 py-1">{nivel}</p>
+
         </div>
         <img class="w-full h-full" src={img} alt="" />
     </div>
 
     <div class="">
-        <p class="text-xl font-bold ">{titulo}</p>
+        <p class="text-xl font-bold">{titulo}</p>
         <div>
-            <p class="">{subtitle}</p>
-            <p>Tecnica</p>
+            <p class="text-lg font-serif px-3 py-1">{subtitle}</p>
+            <p class="text-lg font-serif px-3 py-1">Tecnica</p>
         </div>
     </div>
-    <div class=" flex justify-between">
+    <div class="flex justify-between">
         <div>
             <p>A partir de</p>
             <p>${price}</p>
@@ -29,7 +30,7 @@ const img = Astro.props.img;
         <button
             class="text-l font-bold text-white bg-mauve-400
                  px-4 py-2 rounded-full"
-            >Icono flecha</button
+            >FS</button
         >
     </div>
 </div>
