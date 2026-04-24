@@ -4,13 +4,13 @@ const subtitle = Astro.props.subtitle;
 const price = Astro.props.price;
 const img = Astro.props.img;
 const nivel = Astro.props.nivel;
+import { Icon } from 'astro-icon/components'
 ---
 
 <div class="flex-1">
     <div class="w-full h-80 overflow-hidden">
-        <div >
-            <p class="text-xl font-serif px-3 py-1">{nivel}</p>
-
+        <div>
+            <p class="text-xl px-3 py-1">{nivel}</p>
         </div>
         <img class="w-full h-full" src={img} alt="" />
     </div>
@@ -18,19 +18,18 @@ const nivel = Astro.props.nivel;
     <div class="">
         <p class="text-xl font-bold">{titulo}</p>
         <div>
-            <p class="text-lg font-serif px-3 py-1">{subtitle}</p>
-            <p class="text-lg font-serif px-3 py-1">Tecnica</p>
+            <p class="text-lg px-3 py-1">{subtitle}</p>
         </div>
     </div>
-    <div class="flex justify-between">
+    <div class="flex justify-between text-lg font-bold px-3 py-5">
         <div>
             <p>A partir de</p>
-            <p>${price}</p>
+            <p class="text-amber-900 text-3xl">${price}</p>
         </div>
-        <button
-            class="text-l font-bold text-white bg-mauve-400
-                 px-4 py-2 rounded-full"
-            >FS</button
-        >
+
+        <div>
+            <Icon name="next" size={24} />
+        </div>
+        
     </div>
 </div>
