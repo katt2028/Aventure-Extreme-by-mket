@@ -4,23 +4,299 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
     <section>
-        <div>
-            <button
-                class="text-lg text-ambar-950 bg-amber-500
-           px-4 py-2 rounded-full p-5"
-                >ENCIENDE TU MOTOR</button
-            >
+        <div
+            class="bg-[#fcf3f0] flex items-center justify-between px-20 py-24 font-sans max-w-full mx-auto min-h-[500px]"
+        >
+            <div class="flex flex-col w-1/2 pr-12">
+                <div class="bg-[#f2d024] w-fit px-3 py-1 rounded-full mb-6">
+                    <p
+                        class="text-[0.65rem] font-black uppercase tracking-widest text-[#4a2c19]"
+                    >
+                        Enciende tu motor
+                    </p>
+                </div>
 
-            <p class="text-8xl font-bold text-amber-950 px-5 ml-4 py-4">
-                ¿LISTO PARA
-            </p>
-            <p class="text-9xl text-amber-600 px-5 ml-4 py-1">ENSUCIARTE?</p>
+                <div class="flex flex-col leading-[0.95] mb-8">
+                    <p
+                        class="text-[5.5rem] font-black text- uppercase tracking-tighter"
+                    >
+                        ¿Listo para
+                    </p>
+                    <p
+                        class="text-[5.5rem] font-black text-amber-600 uppercase tracking-tighter"
+                    >
+                        Llenarte de tierra?
+                    </p>
+                </div>
 
-            <p class="text-2xl px-5 ml-4 py-8">
-                Elige tu ruta por los escarpados senderos valencianos. Tanto si
-                prefieres un paseo al atardecer como una aventura en el barro,
-                tenemos el quad y el guía esperándote.
-            </p>
+                <p class="text-[#6b6661] text-lg leading-relaxed max-w-md">
+                    Elige tu camino a través de las escarpadas rutas
+                    valencianas. Ya sea un paseo al atardecer o una aventura
+                    llena de barro, tenemos el quad y el guía esperando por ti.
+                </p>
+            </div>
+
+            <div class="relative w-1/2 flex justify-end">
+                <div
+                    class="w-[480px] h-[480px] rounded-[1.5rem] overflow-hidden shadow-2xl"
+                >
+                    <img
+                        src="fotofinal.png"
+                        class="w-full h-full object-cover"
+                        alt="Aventura en Quad"
+                    />
+                </div>
+
+                <div
+                    class="absolute -bottom-10 left-0 bg-white p-8 rounded-2xl shadow-xl max-w-[220px] border border-gray-50"
+                >
+                    <div class="text-[#8b4513] text-3xl mb-3">🛡️</div>
+                    <p
+                        class="text-[#42210b] text-[0.85rem] font-bold leading-snug"
+                    >
+                        Equipo de seguridad certificado para cada piloto.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
-</Layout>
+
+    <section>
+        <div class="bg-[#fcf3f0] p-10 font-sans max-w-full mx-auto flex gap-6">
+            <div
+                class="bg-[#fde9e1] flex-1 rounded-[2.5rem] p-12 shadow-sm border border-[#f5dbcf]"
+            >
+                <p
+                    class="text-2xl font-black text-[#42210b] uppercase tracking-tight mb-2"
+                >
+                    Reserva tu lugar
+                </p>
+                <p class="text-[#8b6e5a] text-l mb-10 font-medium">
+                    Completa los detalles y nuestros maestros de ruta
+                    confirmarán tu paseo en un máximo de 2 horas.
+                </p>
+
+                <div class="flex flex-col gap-6">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex flex-col gap-2">
+                            <p
+                                class="text-[0.65rem] font-bold uppercase tracking-wider text-[#8b6e5a] ml-1"
+                            >
+                                Nombre Completo
+                            </p>
+                            <input
+                                type="text"
+                                placeholder="John Doe"
+                                class="w-full px-5 py-3 rounded-xl border-none bg-white text-sm focus:ring-2 focus:ring-[#e87833] outline-none placeholder:text-gray-300 shadow-sm"
+                            />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p
+                                class="text-[0.65rem] font-bold uppercase tracking-wider text-[#8b6e5a] ml-1"
+                            >
+                                Correo Electrónico
+                            </p>
+                            <input
+                                type="email"
+                                placeholder="john@adventure.com"
+                                class="w-full px-5 py-3 rounded-xl border-none bg-white text-sm focus:ring-2 focus:ring-[#e87833] outline-none placeholder:text-gray-300 shadow-sm"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex flex-col gap-2">
+                            <p
+                                class="text-[0.65rem] font-bold uppercase tracking-wider text-[#8b6e5a] ml-1"
+                            >
+                                Selección de Tour
+                            </p>
+                            <div class="relative">
+                                <select
+                                    class="w-full px-5 py-3 rounded-xl border-none bg-white text-sm focus:ring-2 focus:ring-[#e87833] outline-none text-gray-600 appearance-none shadow-sm cursor-pointer"
+                                >
+                                    <option>Costa de Valencia (2h)</option>
+                                    <option>Montaña Extrema (4h)</option>
+                                </select>
+                                <div
+                                    class="absolute inset-y-0 right-5 flex items-center pointer-events-none"
+                                >
+                                    <div
+                                        class="border-l-2 border-b-2 border-gray-400 w-2 h-2 rotate-[-45deg] mb-1"
+                                    >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p
+                                class="text-[0.65rem] font-bold uppercase tracking-wider text-[#8b6e5a] ml-1"
+                            >
+                                Número de Pilotos
+                            </p>
+                            <div
+                                class="flex items-center bg-white rounded-xl px-4 py-2 justify-between shadow-sm"
+                            >
+                                <button
+                                    type="button"
+                                    class="text-[#e87833] font-bold text-xl hover:bg-gray-50 w-8 h-8 rounded-lg transition-colors"
+                                    >−</button
+                                >
+                                <p class="text-sm font-bold text-[#42210b]">
+                                    1
+                                </p>
+                                <button
+                                    type="button"
+                                    class="text-[#e87833] font-bold text-xl hover:bg-gray-50 w-8 h-8 rounded-lg transition-colors"
+                                    >+</button
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <p
+                            class="text-[0.65rem] font-bold uppercase tracking-wider text-[#8b6e5a] ml-1"
+                        >
+                            Fecha y Hora Preferida
+                        </p>
+                        <div class="relative flex items-center">
+                            <input
+                                type="text"
+                                placeholder="dd/mm/aaaa --:-- -----"
+                                class="w-full px-5 py-3 rounded-xl border-none bg-white text-sm focus:ring-2 focus:ring-[#e87833] outline-none placeholder:text-gray-300 shadow-sm"
+                            />
+                            <div
+                                class="absolute right-5 text-gray-400 font-bold text-lg"
+                            >
+                                📅
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <p
+                            class="text-[0.65rem] font-bold uppercase tracking-wider text-[#8b6e5a] ml-1"
+                        >
+                            Requerimientos Especiales
+                        </p>
+                        <textarea
+                            placeholder="¿Algún nivel de experiencia o condición física que debamos saber?"
+                            class="w-full px-5 py-3 rounded-xl border-none bg-white text-sm focus:ring-2 focus:ring-[#e87833] outline-none h-24 resize-none placeholder:text-gray-300 shadow-sm"
+                        ></textarea>
+                    </div>
+
+                    <button
+                        class="w-full bg-gradient-to-r from-[#c0561d] to-[#f4853d] text-white font-bold uppercase tracking-[0.15em] py-4 rounded-full shadow-lg shadow-orange-900/20 hover:scale-[1.01] active:scale-[0.99] transition-all mt-4"
+                    >
+                        Confirmar Solicitud de Reserva
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-[380px] flex flex-col gap-6">
+                <div class="bg-[#f8d0bb] rounded-[2.5rem] p-8 space-y-6">
+                    <p
+                        class="text-lg font-black text-[#42210b] uppercase tracking-tight"
+                    >
+                        Ponte en contacto
+                    </p>
+
+                    <div class="space-y-5">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="bg-[#ebbc9f] w-9 h-9 flex items-center justify-center rounded-full text-[#42210b] shadow-sm text-sm"
+                            >
+                                📍
+                            </div>
+                            <div class="text-[0.7rem] leading-tight mt-1">
+                                <p
+                                    class="font-bold text-[#8b6e5a] uppercase tracking-wider mb-0.5"
+                                >
+                                    Campamento Base
+                                </p>
+                                <p class="text-[#42210b] font-medium">
+                                    Naguanagua, Valencia, Venezuela
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="bg-[#ebbc9f] w-9 h-9 flex items-center justify-center rounded-full text-[#42210b] shadow-sm text-sm"
+                            >
+                                📞
+                            </div>
+                            <div class="text-[0.7rem] leading-tight mt-1">
+                                <p
+                                    class="font-bold text-[#8b6e5a] uppercase tracking-wider mb-0.5"
+                                >
+                                    Canal de Radio
+                                </p>
+                                <p class="text-[#42210b] font-medium">
+                                    +1 773 766 5157
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="bg-[#ebbc9f] w-9 h-9 flex items-center justify-center rounded-full text-[#42210b] shadow-sm text-sm"
+                            >
+                                ✉️
+                            </div>
+                            <div class="text-[0.7rem] leading-tight mt-1">
+                                <p
+                                    class="font-bold text-[#8b6e5a] uppercase tracking-wider mb-0.5"
+                                >
+                                    Despacho Digital
+                                </p>
+                                <p class="text-[#42210b] font-medium">
+                                    aventure.extreme@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#fde9e1] rounded-[2rem] overflow-hidden flex flex-col border border-[#f5dbcf] group cursor-pointer"
+                >
+                    <div class="h-32 w-full overflow-hidden">
+                        <img
+                            src="fotofinaa.jpg"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            alt="Valencia"
+                        />
+                    </div>
+                    <div class="p-5 flex justify-between items-center">
+                        <div>
+                            <p
+                                class="font-black text-[#42210b] text-sm uppercase tracking-tight"
+                            >
+                                Valencia, Venezuela
+                            </p>
+                            <p class="text-[0.65rem] text-[#8b6e5a] font-bold">
+                                Nuestra sede principal de rutas
+                            </p>
+                        </div>
+                        <div class="text-[#8b6e5a] text-xl font-bold">🗺️</div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white/40 border border-[#f8d0bb] rounded-2xl p-6 flex justify-between items-center cursor-pointer hover:bg-white/80 transition-all shadow-sm group"
+                >
+                    <div>
+                        <p
+                            class="font-black text-[#42210b] text-[0.75rem] uppercase tracking-wider"
+                        >
+                            ¿Tienes dudas?
+                        </p>
+                        <p class="text-[0.65rem] text-[#8b6e5a] font-bold">
+                            Guía de seguridad y FAQ para
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section></Layout
+>

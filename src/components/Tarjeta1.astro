@@ -7,7 +7,7 @@ const nivel = Astro.props.nivel;
 import { Icon } from 'astro-icon/components'
 ---
 
-<div class="flex-1">
+<div class="flex-1 shadow">
     <div class="w-full h-80 overflow-hidden">
         <div>
             <p class="text-xl px-3 py-1">{nivel}</p>
@@ -15,21 +15,21 @@ import { Icon } from 'astro-icon/components'
         <img class="w-full h-full" src={img} alt="" />
     </div>
 
-    <div class="">
+    <div class="px-5 py-3">
         <p class="text-xl font-bold">{titulo}</p>
         <div>
             <p class="text-lg px-3 py-1">{subtitle}</p>
         </div>
-    </div>
-    <div class="flex justify-between text-lg font-bold px-3 py-5">
-        <div>
-            <p>A partir de</p>
-            <p class="text-amber-900 text-3xl">${price}</p>
+        <div class="flex justify-between text-lg font-bold">
+            <div class="flex gap-4 items-center">
+                <p>A partir de</p>
+                <p class="text-amber-900 text-3xl">${price}</p>
+            </div>
+    
+            <div>
+                <Icon name="next" size={24} />
+            </div>
+            
         </div>
-
-        <div>
-            <Icon name="next" size={24} />
-        </div>
-        
     </div>
 </div>
